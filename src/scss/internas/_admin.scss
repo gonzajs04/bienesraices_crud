@@ -1,0 +1,94 @@
+
+@use '../base/variables' as v;
+
+.imagen-small{
+    width: 30rem;
+}
+
+.alerta{
+    color: white;
+    padding: .5rem;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    &.error{
+        background-color: v.$rojoError;
+    }
+
+    &.exito{
+        background-color: v.$verde;
+    }
+
+    
+}
+
+.contenedor-tabla{
+    padding: 2rem 0;
+}
+// .tabla_propiedades{
+//    text-align: center;
+//     background-color: v.$gris;
+//     width: 100%;
+//     border-spacing: 0;
+//     .imagen-tabla{
+//         width: 250px;
+//         display: grid;
+//         place-items: center;
+//     }
+//     thead{
+//         background-color: v.$amarillo;
+       
+//         th{
+//             color: v.$blanco;
+//             padding: 2rem;
+//         } 
+//     }
+
+//     td{
+//         padding: 0 5rem;
+//     }
+// }
+
+
+.contenedor-propiedades{
+    background-color: v.$gris;
+    margin: 10rem auto;
+}
+.head-propiedades{
+ 
+   background-color: v.$verde;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 2rem;
+    p{
+        color: white;
+    }
+}
+
+
+.body-propiedades{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .imagen-tabla{
+        width: 150px;
+       
+    }
+    p{
+        display: grid;
+        place-items: center;
+        width: 260px;
+        text-align: center;
+        color: v.$negro;
+    }
+    a{
+        color: white;
+    }
+    
+    
+}
+
+

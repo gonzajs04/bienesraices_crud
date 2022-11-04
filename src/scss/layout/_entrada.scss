@@ -1,0 +1,6 @@
+@use '../base/variables' as v;
+.blog{
+    h4{
+        color: v.$grisOscuro;
+    }
+}

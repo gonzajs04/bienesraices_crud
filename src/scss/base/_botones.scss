@@ -1,0 +1,17 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+.boton-rojo-block{
+    @include m.boton(v.$rojoError,block,2rem);
+    padding: 1.5rem 5rem;
+    margin: 1rem 0;
+}
+.boton-amarillo-block{
+    @include m.boton(v.$amarillo,block,2rem);
+    padding: 1.5rem 2rem;
+
+}
+
+.boton-verde-block{
+    @include m.botonInput(v.$verde,block,1rem,20px,white);
+    width: 300px;
+}

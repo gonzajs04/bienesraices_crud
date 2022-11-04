@@ -1,0 +1,96 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.casas{
+    padding: 3rem 0;
+}
+
+.grid-casas{
+    @include m.tablet{
+        @include m.grid(3,2fr);
+        gap: 3rem;
+        
+    }
+    padding: 0rem 10rem;
+    @include m.grid(1,1fr);
+    row-gap: 3rem;
+    
+  
+        
+
+}
+.grid-casa{
+    border: 2px solid v.$gris;
+    
+    
+    background-color: lighten(v.$gris,6);
+    .imgcasa{
+        margin: 0;
+    }
+  
+    p{
+        padding: 0 2rem;
+    }
+    .boton{
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+    .boton-amarillo {
+    @include m.boton(v.$amarillo,block,20px);
+        a{
+            color:v.$blanco;
+        }
+        margin: 20px auto;
+     
+
+      
+        
+    }
+        
+    
+}
+
+.precio{
+    color: v.$verde;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+
+.boton-verde{
+        margin: 40px auto;
+     
+        @include m.boton(v.$verde,block,0);
+        width: 100%;
+        a{
+            width: 100%;
+      
+        }
+               
+        
+ }
+
+
+
+    ul{
+      
+        list-style: none;
+        max-width: 40rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+           
+            flex: 1; //DISTRIBUYE A CADA UNO DE LOS ELEMENTOS del li 1PX
+            img{
+                flex: 0 0 3rem; //LE ASIGNAMOS UN TAMAÑO PREDETERMINADO a la img
+            }
+            display: flex;
+           
+           
+        }
+    }
+
+

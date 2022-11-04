@@ -1,0 +1,37 @@
+@use '../base/variables'as v;
+@use '../base/mixins'as m;
+
+.header{
+    background-color: v.$grisOscuro;
+}
+.grid-nosotros{
+    text-align: center;
+    @include m.tablet{
+        @include m.grid(3,5rem);
+        text-align: left
+    }
+    @include m.grid(1,5rem);
+    .icono{
+       margin: 0 auto;
+      
+        img{
+            height: 10rem;
+            width: 100%;
+        }
+    }
+    h3{
+        text-transform: uppercase;
+    }
+    
+    
+}
+
+.container-nosotros{
+    @include m.tablet{
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        column-gap: 3rem;
+        
+        
+    }
+}

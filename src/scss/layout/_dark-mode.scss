@@ -1,0 +1,60 @@
+@use '../base/variables' as v;
+.dark-mode{
+    background-color: darken(v.$grisOscuro,10);
+    p,a{
+        color: v.$blanco;
+    }
+    h1,h2,h3,h4{
+        color: v.$gris;
+    }
+    .grid-casa{
+        background-color: v.$grisOscuro;
+        border: 1px solid v.$grisOscuro;
+        .precio{
+            color: v.$verde;
+        }
+    }
+    li{
+        img{
+            filter: invert(100%);
+        }
+        span{
+            color:v.$blanco;
+            font-weight: bold;
+            padding-left: 1rem;
+        }
+    }
+
+   
+    .footer{
+        background-color: v.$grisOscuro;
+    }
+
+    .blog a h4{
+        color: v.$blanco;
+    }
+
+    fieldset{
+        filter: invert(100%);
+    }
+    .head-propiedades{
+        background-color: v.$amarillo;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 2rem;
+       
+    }
+
+    .form-login{
+        filter: invert(100%);
+
+      
+      
+    }
+    
+}
+
+
+

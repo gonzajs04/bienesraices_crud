@@ -1,0 +1,14 @@
+@use '../base/variables' as v;
+.footer{
+    background-color: v.$grisOscuro;
+    padding: 2rem 0;
+    p{
+        text-align: center;
+        color: v.$blanco;
+    }
+    .nav{
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+    }
+}
